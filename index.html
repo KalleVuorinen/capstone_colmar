@@ -5,12 +5,15 @@
     <title>Colmar Academy</title>
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet"/>
     <link href="resources/css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- Header -->
+<header class="desktop">
     <nav class="container">
       <div class="logo">
-        <img src="resources/images/ic-logo.svg">
+        <img src="resources/images/ic-logo.svg" alt="logo">
         <span class="word">academy</hspan>
       </div>
       <div class="menu">
@@ -22,21 +25,234 @@
           </ul>
         </div>
     </nav>
+  </header>
+
+  <header class="mobile">
+      <nav class="mobile-container">
+        <img src="resources/images/ic-logo.svg" alt="logo">
+        <img src="resources/images/ic-on-campus.svg" alt="on campus">
+        <img src="resources/images/ic-online.svg" alt="Online">
+        <img src="resources/images/ic-login.svg" alt="log in">
+      </nav>
+    </header>
 
     <!-- Banner -->
-    <div class="flex container">
+    <div class="banner">
       <div class="banner-left">
+        <img src="resources/images/banner.jpg" alt="Main banner image">
       </div>
+
       <div class="banner-right">
+        <div class="bright-text">
         <h1>Learn something new everyday</h1>
-        <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit</p>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+
         <div class="btn">
           Start here
+        </div>
         </div>
       </div>
       </div>
 
+
+<!-- information -->
+
+<div class="container">
+  <div class="information">
+    <div class="information-left">
+      <img src="resources/images/information-main.jpg" class="information-main">
+    <h2>It doesn't hurt to keep practising</h2>
+    <p>"Curabitur ultrices odio tellus, eget tincidunt nibh suscipit in. Nam lacinia lobortis sapien, sed ornare ex imperdiet ac. Nulla fermentum ac elit nec dapibus. Nunc facilisis elementum ex vel facilisis."</p>
+    <span class="signature">
+      Emanuel, Sr Strategist at hiring.com
+    </span>
     </div>
+
+    <div class="information-right">
+      <div class="info">
+      <img src="resources/images/information-orientation.jpg" class="firstimg" alt="Orientation">
+      <div class="info-text">
+        <h3>Orientation day</h3>
+        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+        <span class="ReadMore">Read more</span>
+      </div>
+    </div>
+
+    <div class="info">
+    <img src="resources/images/information-campus.jpg" alt="Campus">
+    <div class="info-text">
+      <h3>Our campus</h3>
+      <p>Find wich campus is close by you</p>
+      <span class="ReadMore">Read more</span>
+    </div>
+  </div>
+
+  <div class="info">
+  <img src="resources/images/information-guest-lecture.jpg" alt="Guest lecture">
+  <div class="info-text">
+    <h3>Our guest lecture</h3>
+    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+    <span class="ReadMore">Read more</span>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile information -->
+<div class="container">
+  <div class="information-mobile">
+    <div class="info">
+      <img src="resources/images/information-orientation-mobile.jpg" class="firstimg">
+      <div class="info-text">
+        <h3>Orientation day</h3>
+        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+        <span class="ReadMore">Read more</span>
+      </div>
+    </div>
+
+    <div class="info">
+    <img src="resources/images/information-campus-mobile.jpg">
+    <div class="info-text">
+      <h3>Our campus</h3>
+      <p>Find wich campus is close by you</p>
+      <span class="ReadMore">Read more</span>
+    </div>
+  </div>
+
+  <div class="info">
+  <img src="resources/images/information-guest-lecture-mobile.jpg">
+  <div class="info-text">
+    <h3>Our guest lecture</h3>
+    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+    <span class="ReadMore">Read more</span>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Courses -->
+
+<div class="container">
+  <div class="learning">
+    <h2>Start Learning</h2>
+      <div class="courses">
+        <div class="course-item">
+          <img src="resources/images/course-software.jpg" alt="Software engineering image">
+          <div class="course-text">
+            <h3>Software engineering</h3>
+            <h4>course</h4>
+            <p>Web development, mobile development, iOT, APIs</p>
+          </div>
+    </div>
+
+    <div class="course-item">
+      <img src="resources/images/course-computer-art.jpg" alt="Computer art image">
+        <div class="course-text">
+          <h3>Computer art</h3>
+          <h4>course</h4>
+          <p>Web development, mobile development, iOT, APIs</p>
+      </div>
+    </div>
+
+    <div class="course-item">
+      <img src="resources/images/course-design.jpg" alt="Design course image">
+        <div class="course-text">
+          <h3>Design</h3>
+          <h4>course</h4>
+          <p>Web development, mobile development, iOT, APIs</p>
+      </div>
+    </div>
+
+    <div class="course-item">
+      <img src="resources/images/course-data.jpg" alt="Data course image">
+        <div class="course-text">
+          <h3>Data</h3>
+          <h4>course</h4>
+        <p>Web development, mobile development, iOT, APIs</p>
+      </div>
+    </div>
+
+    <div class="course-item">
+      <img src="resources/images/course-business.jpg" alt="Business course image">
+        <div class="course-text">
+          <h3>Business</h3>
+          <h4>course</h4>
+          <p>Web development, mobile development, iOT, APIs</p>
+      </div>
+    </div>
+
+    <div class="course-item">
+      <img src="resources/images/course-marketing.jpg" alt="Marketing course image">
+        <div class="course-text">
+          <h3>Marketing</h3>
+          <h4>course</h4>
+          <p>Web development, mobile development, iOT, APIs</p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+
+
+
+<!-- Thesis -->
+
+<div class="container">
+  <div class="thesis-content">
+    <h2>Thesis exhibit</h2>
+
+  <div class="thesis">
+    <div class="thesis-left">
+    <video width="100%" height="auto" controls>
+      <source src="resources/videos/thesis.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Reimagine urban</h3>
+      <p>"Curabitur ultrices odio tellus, eget tincidunt nibh suscipit in. Nam lacinia lobortis sapien, sed ornare ex imperdiet ac. Nulla fermentum ac elit nec dapibus. Nunc facilisis elementum ex vel facilisis."</p>
+      <span class="copyright"> Emanuel, Sr Strategist at hiring.com
+    </span>
+  </div>
+
+  <div class="thesis-right">
+    <div class="info">
+      <img src="resources/images/thesis-fisma.jpg" class="firstimg" alt="Fisma image">
+        <div class="info-text">
+          <h3>Fisma: Design and prototype</h3>
+          <p>Designer showcase of new prototype product</p>
+        </div>
+      </div>
+
+      <div class="info">
+        <img src="resources/images/thesis-now-and-then.jpg" alt="Thesis now and then">
+        <div class="info-text">
+          <h3>Now and then</h3>
+          <p>Research study about New York</p>
+        </div>
+      </div>
+
+      </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="container">
+  <div class="terms">
+      <span class="rights">&copy; 2016 Colmar Academy. All rights reserved.</span>
+          <ul>
+              <li>Terms</li>
+              <li>Privacy</li>
+           </ul>
+
+      </div>
+</footer>
+
 
   </body>
 </html>

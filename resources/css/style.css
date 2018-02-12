@@ -1,23 +1,63 @@
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 1.66;
+  color: #4a4a4a;
+}
+
 h1, h2, h3 {
   font-weight: bold;
 }
 
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 1.2rem;
+
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: light;
+  margin-bottom: 8px;
+  }
+
+
 .container {
   max-width: 960px;
   margin: 0 auto;
+
 }
 
-.flex {
-  display: flex;
+
+/** header CSS **/
+
+
+
+header.mobile {
+  display: none;
 }
 
 nav {
+  width: 100%;
   height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+  }
 
 
 .logo img {
@@ -32,13 +72,12 @@ nav {
 }
 
 span.word {
-  font-family: 'Arial', sans-serif;
  color: black;
  text-transform: uppercase;
 }
 
 span.word:before {
- color: red;
+ color: #4a4a4a;
  content: "COLMAR";
  font-weight: bold;
 }
@@ -52,10 +91,431 @@ nav ul {
 
  nav ul li {
    margin-left: 16px;
+   font-family: 'Arial', sans-serif;
+   font-size: 1rem;
  }
 
- .banner-left {
-   width: 60%;
+/** banner CSS **/
+
+.banner {
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background: #d8d8d8;
+  padding: 32px 64px 24px 24px;
+}
+
+.banner-left {
+  width: 60%;
+
+}
+
+ .banner img {
+   object-fit: contain;
+   width: 100%;
    height: auto;
-   background-image: url(../images/banner.jpg);
  }
+
+
+ .banner-right {
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   margin-left: 40px;
+ }
+
+.banner-right .btn {
+   width: 100%;
+   margin: 24px auto;
+   background-color: #4a4a4a;
+   color: white;
+   text-align: center;
+   padding: 8px 0 8px 0;
+ }
+
+/** information css **/
+
+.information {
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  padding: 32px 0 32px 24px;
+}
+
+.information-mobile {
+  display: none;
+}
+
+.information-left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+
+}
+
+.information-left img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+ .information-left span.signature {
+  font-family: 'Arial';
+  font-size: 0.8rem;
+  margin-top: 32px;
+}
+
+.information-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 24px;
+  border-left: 0.5px solid #e9ebeb;
+
+}
+
+.information-right .info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.information-right .info:last-child {
+  background: #d8d8d8;
+}
+
+.information-right .info img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.information-right .info img.firstimg {
+  padding-top: 0;
+}
+
+
+
+.information-right .info span.ReadMore {
+  color: #4a90e2;
+}
+
+/** Courses CSS **/
+
+.learning {
+  box-sizing: border-box;
+  background: #eaebec;
+  padding: 0 72px 32px 72px;
+}
+
+.learning h2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course-headline {
+  display: block;
+}
+
+.course-item {
+  box-sizing: border-box;
+  width: 32%;
+  flex-direction: column;
+  background: white;
+  margin-top: 16px;
+
+}
+
+
+.course-item img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.course-text {
+  padding: 16px 16px 24px 16px;
+}
+
+/** Thesis CSS **/
+
+.thesis-content {
+  box-sizing: border-box;
+  background: #f3f5f5;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px 32px 32px;
+}
+
+.thesis-content h2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.thesis {
+  display: flex;
+}
+
+.thesis-left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+}
+
+.thesis-left {
+  object-fit: contain;
+}
+
+.thesis-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 24px;
+
+}
+
+.thesis-right .info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.thesis-right .info:first-child {
+  background: #d8d8d8;
+}
+
+.thesis-right .info img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.thesis-right .info img.firstimg {
+  padding-top: 0;
+}
+
+.thesis h3 {
+  padding: 24px 0 8px 0;
+}
+
+
+/** footer CSS **/
+
+footer {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.8rem;
+  background: #f3f5f5;
+  border-top: 0.5px solid #e9ebeb;
+}
+
+footer .terms {
+  box-sizing: border-box;
+  padding: 24px 0 64px 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+  footer .terms ul {
+    display: flex;
+  }
+
+  footer .terms ul li {
+    display: flex;
+    margin-right: 16px;
+  }
+
+  /** for screen width under 740px **/
+
+  @media only screen and (max-width: 740px) {
+
+  .container {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+/** Header **/
+
+  header.desktop {
+    display: none;
+  }
+
+  header.mobile {
+    display: flex;
+    height: 64px;
+    padding: 0 24px;
+  }
+
+  .mobile-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+/** Banner **/
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .banner-left {
+    width: 100%;
+  }
+
+  .banner-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bright-text {
+    padding: 32px 64px;
+  }
+
+ .banner-right .btn {
+    margin: 32px auto 24px auto;
+    background-color: #9b9b9b;
+    color: white;
+    text-align: center;
+    padding: 8px 0 8px 0;
+  }
+
+  /** Information **/
+
+  .information {
+    display: none;
+  }
+
+  .information-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 16px auto;
+  }
+
+  .information-mobile .info {
+    padding: 16px;
+    margin-bottom: 48px;
+  }
+
+.information-mobile .info img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+/** Learning **/
+
+.learning {
+  box-sizing: border-box;
+  background: #f5f4f5;
+  width: 100%;
+}
+
+.learning h2 {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.course-item {
+  width: auto;
+  background: #d8d8d8;
+  margin-top: 8px;
+  padding: 16px 16px 24px 16px;
+}
+
+.course-item h3 {
+
+
+}
+.course-item h4, p {
+  display: none;
+}
+
+
+.course-item img {
+  display: none;
+}
+
+/** Thesis **/
+
+.thesis-content {
+  border-top: 0.5px solid #d8d8d8;
+  padding: 0;
+}
+
+.thesis-right {
+  display: none;
+}
+
+
+.thesis-left {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.thesis-left h3, p {
+  display: none;
+}
+
+span.copyright {
+  display: none;
+}
+
+
+/**footer**/
+
+footer {
+  background: #f3f5f5;
+}
+
+footer .terms ul {
+  display: none;
+
+
+span.rights {
+  padding: 16px;
+}
